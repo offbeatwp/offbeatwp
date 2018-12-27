@@ -4,13 +4,6 @@
     "config": {
         "secure-http": false
     },
-
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/offbeatwp/framework"
-        }
-    ],
     "require": {
         "offbeatwp/framework": "dev-master"
     },
