@@ -1,0 +1,11 @@
+{
+    "name": "offbeatwp/offbeatwp",
+    "type": "wordpress-theme",
+    "authors": [
+        {
+            "name": "Chris Schrijver",
+            "email": "chris@raow.nl"
+        }
+    ],
+    "require": {}
+}
