@@ -1,7 +1,7 @@
 <?php
 namespace OffbeatWP\Controllers;
 
-use Raow\Controllers\AbstractController;
+use OffbeatWP\Controllers\AbstractController;
 use OffbeatWP\Models\PageModel;
 
 class PagesController extends AbstractController {

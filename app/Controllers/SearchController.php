@@ -1,7 +1,7 @@
 <?php
 namespace OffbeatWP\Controllers;
 
-use Raow\Controllers\AbstractController;
+use OffbeatWP\Controllers\AbstractController;
 
 class SearchController extends AbstractController {
     public function actionSearch($posts)

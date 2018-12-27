@@ -1,7 +1,7 @@
 <?php
 namespace OffbeatWP\Services;
 
-use Raow\Services\AbstractService;
+use OffbeatWP\Services\AbstractService;
 
 class SiteService extends AbstractService
 {

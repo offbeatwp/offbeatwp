@@ -1,7 +1,9 @@
 <?php
+use \OffbeatWP\Content\Post\PostsCollection;
+use \App\Controllers;
 
 offbeat('routes')->register(
-    [OffbeatWP\Controllers\PagesController::class, 'actionSingle'],
+    [PagesController::class, 'actionSingle'],
     function () {
         return is_singular('page');
     },
@@ -10,7 +12,7 @@ offbeat('routes')->register(
     }
 );
 
-offbeat('routes')->register([OffbeatWP\Controllers\PostsController::class, 'actionSingle'],
+offbeat('routes')->register([PostsController::class, 'actionSingle'],
     function () {
         return is_singular('post');
     },
@@ -19,33 +21,33 @@ offbeat('routes')->register([OffbeatWP\Controllers\PostsController::class, 'acti
     }
 );
 
-offbeat('routes')->register([OffbeatWP\Controllers\PostsController::class, 'actionArchive'], 
+offbeat('routes')->register([PostsController::class, 'actionArchive'], 
     function () {
         return is_archive();
     },
     function () {
-        return ['posts' => new \Raow\Content\Post\PostsCollection($GLOBALS['wp_query'])];
+        return ['posts' => new PostsCollection($GLOBALS['wp_query'])];
     }
 );
 
-offbeat('routes')->register([\Raow\Controllers\PostsController::class, 'actionPostsPage'], 
+offbeat('routes')->register([PostsController::class, 'actionPostsPage'], 
     function () {
         return is_home();
     },
     function () {
-        return ['posts' => new \Raow\Content\Post\PostsCollection($GLOBALS['wp_query'])];
+        return ['posts' => new PostsCollection($GLOBALS['wp_query'])];
     }
 );
 
-offbeat('routes')->register([\Raow\Controllers\ErrorsController::class, 'action404'], function () {
+offbeat('routes')->register([ErrorsController::class, 'action404'], function () {
     return is_404();
 });
 
-offbeat('routes')->register([\Raow\Controllers\SearchController::class, 'actionSearch'],
+offbeat('routes')->register([SearchController::class, 'actionSearch'],
     function () {
         return is_search();
     },
     function () {
-        return ['posts' => new \Raow\Content\Post\PostsCollection($GLOBALS['wp_query'])];
+        return ['posts' => new PostsCollection($GLOBALS['wp_query'])];
     }
 );
