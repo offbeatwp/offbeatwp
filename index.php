@@ -1,2 +1,2 @@
 <?php
-echo "OffbeatWP";
+offbeat()->run();

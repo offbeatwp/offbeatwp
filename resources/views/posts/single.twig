@@ -1,0 +1,11 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+    {{ post.setup }}
+
+        <h1>{{ post.title }}</h1>
+    
+        {{ post.content | raw }}
+    
+    {{ post.end }}
+{% endblock %}

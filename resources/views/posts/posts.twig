@@ -1,0 +1,9 @@
+{% extends 'main.twig' %}
+
+{% block content %}
+    <ul>
+        {% for post in posts %}
+            <li><a href="{{ post.permalink }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

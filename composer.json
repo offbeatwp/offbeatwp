@@ -1,11 +1,24 @@
 {
     "name": "offbeatwp/offbeatwp",
     "type": "wordpress-theme",
-    "authors": [
+    "config": {
+        "secure-http": false
+    },
+
+    "repositories": [
         {
-            "name": "Chris Schrijver",
-            "email": "chris@raow.nl"
+            "type": "vcs",
+            "url": "ssh://git@github.com:offbeatwp/framework.git"
         }
     ],
-    "require": {}
+    "require": {
+        "offbeatwp/framework": "master-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "OffbeatWP\\": "app",
+            "Modules\\": "modules",
+            "Components\\": "components"
+        }
+    }
 }
