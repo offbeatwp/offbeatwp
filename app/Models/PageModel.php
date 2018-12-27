@@ -1,8 +1,8 @@
 <?php
 namespace App\Models;
 
-use OffbeatWP\Content\Post\PostModel;
+use OffbeatWP\Content\Post\PostModel as OffbeatWpPostModel;
 
-class PageModel extends PostModel {
+class PageModel extends OffbeatWpPostModel {
     const POST_TYPE = 'page';
 }
