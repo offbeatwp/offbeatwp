@@ -2,5 +2,5 @@
 return [
     OffbeatWP\Twig\Service::class,
 
-    OffbeatWP\Services\SiteService::class,    
+    App\Services\SiteService::class,    
 ];
