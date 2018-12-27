@@ -1,11 +1,10 @@
 {
-  "name": "offbeatwp/offbeatwp",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "ssh://git@github.com:offbeatwp/offbeatwp.git",
-  "author": "Chris Schrijver <chris@raow.nl>",
-  "license": "MIT",
-  "dependencies": {
-    "offbeatwp/webpack": "ssh://git@github.com:offbeatwp/webpack.git#master",
-  }
+    "name": "offbeatwp-webpack",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Chris Schrijver <chris@raow.nl>",
+    "license": "MIT",
+    "dependencies": {
+    "offbeatwp-webpack": "https://github.com/offbeatwp/webpack.git#master"
+    }
 }
