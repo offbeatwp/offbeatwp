@@ -5,6 +5,7 @@
     "author": "Chris Schrijver <chris@raow.nl>",
     "license": "MIT",
     "dependencies": {
-    "offbeatwp-webpack": "https://github.com/offbeatwp/webpack.git#master"
+        "jquery": "^2.2.0",
+        "offbeatwp-webpack": "https://github.com/offbeatwp/webpack.git#master"
     }
 }
