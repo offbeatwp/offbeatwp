@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "OffbeatWP\\": "app",
+            "App\\": "app",
             "Modules\\": "modules",
             "Components\\": "components"
         }

@@ -1,8 +1,8 @@
 <?php
-namespace OffbeatWP\Controllers;
+namespace App\Controllers;
 
 use OffbeatWP\Controllers\AbstractController;
-use OffbeatWP\Models\PostModel;
+use App\Models\PostModel;
 
 class PostsController extends AbstractController {
     public function actionSingle(PostModel $post)

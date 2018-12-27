@@ -1,5 +1,5 @@
 <?php
-namespace OffbeatWP\Models;
+namespace App\Models;
 
 use OffbeatWP\Content\Post\PostModel;
 

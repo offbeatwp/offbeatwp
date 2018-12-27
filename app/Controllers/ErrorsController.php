@@ -1,5 +1,5 @@
 <?php
-namespace OffbeatWP\Controllers;
+namespace App\Controllers;
 
 use OffbeatWP\Controllers\AbstractController;
 
