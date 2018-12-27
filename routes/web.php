@@ -1,9 +1,11 @@
 <?php
 use \OffbeatWP\Content\Post\PostsCollection;
-use \App\Controllers;
+use \App\Controllers\PagesController;
+use \App\Controllers\PostsController;
+use \App\Controllers\ErrorsController;
+use \App\Controllers\SearchController;
 
-offbeat('routes')->register(
-    [PagesController::class, 'actionSingle'],
+offbeat('routes')->register([PagesController::class, 'actionSingle'],
     function () {
         return is_singular('page');
     },
