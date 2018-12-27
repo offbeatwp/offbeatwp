@@ -5,7 +5,8 @@
         "secure-http": false
     },
     "require": {
-        "offbeatwp/framework": "dev-master"
+        "offbeatwp/framework": "dev-master",
+        "offbeatwp/twig": "dev-master"
     },
     "autoload": {
         "psr-4": {
