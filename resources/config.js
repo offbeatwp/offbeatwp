@@ -7,6 +7,6 @@ module.exports = {
             './resources/js/main.js',
             './resources/sass/main.scss',
         ],
-        images: glob.sync('./resources/img/**.{png,jpg,svg}'),
+        // images: glob.sync('./resources/img/**.{png,jpg,svg}'),
     },
 };

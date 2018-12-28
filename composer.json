@@ -1,5 +1,7 @@
 {
     "name": "offbeatwp/offbeatwp",
+    "description": "The OffbeatWP base theme",
+    "license": "MIT",
     "type": "wordpress-theme",
     "config": {
         "secure-http": false
