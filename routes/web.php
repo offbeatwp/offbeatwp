@@ -5,7 +5,7 @@ use \App\Controllers\PostsController;
 use \App\Controllers\ErrorsController;
 use \App\Controllers\SearchController;
 
-offbeat('routes')->register([PagesController::class, 'actionSingle'],
+offbeat('routes')->callback([PagesController::class, 'actionSingle'],
     function () {
         return is_singular('page');
     },
@@ -14,7 +14,7 @@ offbeat('routes')->register([PagesController::class, 'actionSingle'],
     }
 );
 
-offbeat('routes')->register([PostsController::class, 'actionSingle'],
+offbeat('routes')->callback([PostsController::class, 'actionSingle'],
     function () {
         return is_singular('post');
     },
@@ -23,7 +23,7 @@ offbeat('routes')->register([PostsController::class, 'actionSingle'],
     }
 );
 
-offbeat('routes')->register([PostsController::class, 'actionArchive'], 
+offbeat('routes')->callback([PostsController::class, 'actionArchive'], 
     function () {
         return is_archive();
     },
@@ -32,7 +32,7 @@ offbeat('routes')->register([PostsController::class, 'actionArchive'],
     }
 );
 
-offbeat('routes')->register([PostsController::class, 'actionPostsPage'], 
+offbeat('routes')->callback([PostsController::class, 'actionPostsPage'], 
     function () {
         return is_home();
     },
@@ -41,11 +41,11 @@ offbeat('routes')->register([PostsController::class, 'actionPostsPage'],
     }
 );
 
-offbeat('routes')->register([ErrorsController::class, 'action404'], function () {
+offbeat('routes')->callback([ErrorsController::class, 'action404'], function () {
     return is_404();
 });
 
-offbeat('routes')->register([SearchController::class, 'actionSearch'],
+offbeat('routes')->callback([SearchController::class, 'actionSearch'],
     function () {
         return is_search();
     },
