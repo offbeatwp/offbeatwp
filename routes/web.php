@@ -48,8 +48,8 @@ offbeat('routes')->callback(
 offbeat('routes')->callback(
     function () {
         return is_404();
-    }
-    [ ErrorsController::class, 'action404' ],
+    },
+    [ ErrorsController::class, 'action404' ]
 );
 
 offbeat('routes')->callback(
