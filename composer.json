@@ -7,7 +7,7 @@
         "secure-http": false
     },
     "require": {
-        "offbeatwp/framework": "dev-master",
+        "offbeatwp/framework": "dev-feature/routing-5.4",
         "offbeatwp/twig": "dev-master"
     },
     "autoload": {
